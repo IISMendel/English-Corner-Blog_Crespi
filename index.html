@@ -82,10 +82,12 @@
             ExternalLink: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>,
             Brain: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>,
             Sparkles: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>,
+            Newspaper: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>,
             Copy: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>,
             Check: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>,
             Send: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>,
-            Sprout: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.2.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1.7-1.3 2.9-3.8 3-6.9-2.8.9-5.1 2-6.2 4.3z"/></svg>
+            Sprout: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.2.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1.7-1.3 2.9-3.8 3-6.9-2.8.9-5.1 2-6.2 4.3z"/></svg>,
+            Target: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
         };
 
         function Icon({ name, className = "", size = 24 }) {
@@ -94,7 +96,7 @@
             return React.cloneElement(svg, { className, width: size, height: size });
         }
 
-        // --- DATABASE COMPLETO RISORSE ---
+        // --- DATABASE COMPLETO INTEGRALE ---
         const POSTS = {
             netflix: [
                 { title: "English-FLIX Official", desc: "Impara l'inglese con serie TV e Film", link: "https://iismendel.github.io/Mendel-FLIX_Learn-English/", tag: "Project", icon: "Film" }
@@ -102,6 +104,7 @@
             civics: [
                 { title: "La Costituzione Italiana", desc: "Testo completo (Sito del Senato)", link: "https://www.senato.it/istituzione/la-costituzione", tag: "Italy", icon: "Scale" },
                 { title: "Agenda 2030 (UN)", desc: "17 Obiettivi per lo Sviluppo Sostenibile", link: "https://sdgs.un.org/goals", tag: "UN", icon: "Globe" },
+                { title: "Sustainable Development Goals (UN)", desc: "Goals to transform our world", link: "https://sdgs.un.org/goals", tag: "UN" },
                 { title: "Sustainable consumption and production", desc: "Linee guida European Commission", link: "https://ec.europa.eu/environment/sustainable-development/SDG/index_en.htm", tag: "EU" },
                 { title: "European Digital Competence Framework", desc: "DigComp for Citizens", link: "https://joint-research-centre.ec.europa.eu/digcomp_en", tag: "EU" },
                 { title: "Agriculture and rural development", desc: "EC Policy resources", link: "https://agriculture.ec.europa.eu/", tag: "EU" },
@@ -109,29 +112,41 @@
                 { title: "British Institutions", desc: "About-Britain.com guide", link: "https://www.about-britain.com/institutions.htm", tag: "UK" },
                 { title: "American Constitution", desc: "Official Senate.gov text", link: "https://www.senate.gov/civics/constitution_item/constitution.htm", tag: "USA" },
                 { title: "Sustainability (EPA)", desc: "Environmental Protection Agency USA", link: "https://www.epa.gov/sustainability", tag: "USA" },
-                { title: "Climate Change Education (Stanford HS)", desc: "Stanford University resources", link: "https://earth.stanford.edu/climate-change-ed", tag: "Edu" }
+                { title: "Climate Change Education (Stanford HS)", desc: "Stanford University resources", link: "https://earth.stanford.edu/climate-change-ed", tag: "Edu" },
+                { title: "Climate Change Education (Stanford MS)", desc: "Stanford University resources", link: "https://earth.stanford.edu/climate-change-ed", tag: "Edu" },
+                { title: "Climate Change (American Educator)", desc: "Resources for teachers", link: "https://www.aft.org/ae/winter2019-2020/climatechange", tag: "Edu" }
             ],
             reading: [
-                { title: "The Guardian", desc: "World News, Sport & Opinion", link: "https://www.theguardian.com/", tag: "News" },
-                { title: "The Irish Times", desc: "Ireland's leading news source", link: "https://www.irishtimes.com/", tag: "News" },
-                { title: "The Times", desc: "British daily news", link: "https://www.thetimes.co.uk/", tag: "News" },
-                { title: "The New Yorker", desc: "High-quality commentary and analysis", link: "https://www.newyorker.com/", tag: "News" },
-                { title: "FOX NEWS VIDEOS", desc: "Video news coverage", link: "https://www.foxnews.com/video", tag: "News" },
+                { title: "The Guardian", desc: "World News, Sport & Opinion", link: "https://www.theguardian.com/", tag: "News", icon: "Newspaper" },
+                { title: "The Irish Times", desc: "Ireland's leading news source", link: "https://www.irishtimes.com/", tag: "News", icon: "Newspaper" },
+                { title: "The Times", desc: "British daily news", link: "https://www.thetimes.co.uk/", tag: "News", icon: "Newspaper" },
+                { title: "The New Yorker", desc: "High-quality commentary and analysis", link: "https://www.newyorker.com/", tag: "News", icon: "Newspaper" },
+                { title: "FOX NEWS VIDEOS", desc: "Video News coverage", link: "https://www.foxnews.com/video", tag: "News" },
                 { title: "THE NEW YORK POST", desc: "Daily NY News", link: "https://nypost.com/", tag: "News" },
                 { title: "THE WASHINGTON POST", desc: "US Politics and News", link: "https://www.washingtonpost.com/", tag: "News" },
-                { title: "THE INDEPENDENT", desc: "Independent UK news", link: "https://www.independent.co.uk/", tag: "News" },
+                { title: "THE INDEPENDENT", desc: "UK News and Opinion", link: "https://www.independent.co.uk/", tag: "News" },
                 { title: "CNN International", desc: "Global breaking news", link: "https://edition.cnn.com/", tag: "News" },
-                { title: "Michael Moore Analysis", desc: "Commentary on US politics", link: "http://michaelmoore.com/trumpwillwin/", tag: "Opinion" },
+                { title: "Michael Moore Commentary", desc: "Michael Moore's Trump analysis", link: "http://michaelmoore.com/trumpwillwin/", tag: "Opinion" },
                 { title: "Breaking News English", desc: "News su 7 livelli con audio", link: "https://breakingnewsenglish.com/", tag: "Top" },
                 { title: "Stories and Poems (BC)", desc: "Reading & Listening insieme", link: "http://learnenglish.britishcouncil.org/en/stories-poems", tag: "Stories" },
-                { title: "Lit2Go", desc: "Audiobook + PDF per la letteratura", link: "https://etc.usf.edu/lit2go/", tag: "Books" }
+                { title: "Lit2Go", desc: "Audiobook + PDF per la letteratura", link: "https://etc.usf.edu/lit2go/", tag: "Books" },
+                { title: "Library of America", desc: "Archivio letterario USA", link: "https://www.loa.org/", tag: "Library" },
+                { title: "Library of Congress", desc: "Archivio storico digitale", link: "https://www.loc.gov/", tag: "Archive" },
+                { title: "Project Gutenberg", desc: "54.000+ Ebook gratuiti", link: "https://www.gutenberg.org/", tag: "Ebooks" },
+                { title: "Beelinguapp", desc: "App lettura bilingue", link: "https://www.beelinguapp.com/", tag: "App" },
+                { title: "British Library", desc: "Tesori letterari UK", link: "https://www.bl.uk/", tag: "Library" },
+                { title: "ParallelText.io", desc: "Traduzione simultanea paragrafi", link: "http://paralleltext.io/", tag: "Tool" },
+                { title: "Idioms ESL Buzz", desc: "Modi di dire illustrati", link: "https://www.eslbuzz.com/", tag: "Idioms" }
             ],
             listening: [
                 { title: "Radio Garden", desc: "Gira il mondo e ascolta le radio live", link: "http://radio.garden/", tag: "Radio", icon: "Globe" },
                 { title: "Podcasts for Professionals (BC)", desc: "Inglese per il mondo del lavoro", link: "https://learnenglish.britishcouncil.org/business-english/podcasts-for-professionals", tag: "Business" },
                 { title: "TED Talks", desc: "Video educativi con trascrizioni", link: "https://www.ted.com/", tag: "Video" },
                 { title: "Lyrics Training", desc: "Impara l'inglese con le canzoni", link: "https://lyricstraining.com/", tag: "Music" },
-                { title: "BBC 6 Minute English", desc: "Notizie e vocabolario in 6 minuti", link: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english", tag: "BBC" }
+                { title: "BBC 6 Minute English", desc: "Notizie e vocabolario in 6 minuti", link: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english", tag: "BBC" },
+                { title: "134 YouTube Channels", desc: "Lista canali per allenare la listening", link: "https://medium.com/", tag: "List" },
+                { title: "Larry Ferlazzo's Best", desc: "Migliori siti per la listening", link: "https://larryferlazzo.edublogs.org/category/listening/", tag: "Blog" },
+                { title: "Podcasts Archive", desc: "File audio scaricabili con script", link: "http://englishcornerblog.altervista.org/category/listening/", tag: "Archive" }
             ],
             travels: [
                 { title: "Destination Canada", desc: "Official travel guide for Canada", link: "https://www.destinationcanada.com/en", tag: "Official", icon: "Plane" },
@@ -141,7 +156,10 @@
                 { title: "Visit Scotland", desc: "Official Scotland tourism site", link: "https://www.visitscotland.com/", tag: "Official", icon: "Plane" },
                 { title: "Visit London", desc: "La guida ufficiale per scoprire Londra", link: "https://www.visitlondon.com/", tag: "City", icon: "Plane" },
                 { title: "Visit The USA", desc: "Turismo ufficiale negli Stati Uniti", link: "https://www.visittheusa.com/", tag: "Official", icon: "Plane" },
-                { title: "Tourism Australia", desc: "Sito ufficiale turismo australiano", link: "https://www.australia.com/", tag: "Official", icon: "Plane" }
+                { title: "Tourism Australia", desc: "Sito ufficiale turismo australiano", link: "https://www.australia.com/", tag: "Official", icon: "Plane" },
+                { title: "Lonely Planet", desc: "Le migliori guide di viaggio del mondo", link: "https://www.lonelyplanet.com/", tag: "Guide" },
+                { title: "Nat Geo Travel", desc: "Foto e reportage geografici", link: "https://www.nationalgeographic.com/travel", tag: "Media" },
+                { title: "Archivio Viaggi", desc: "I post e i viaggi didattici del blog", link: "http://englishcornerblog.altervista.org/category/travels/", tag: "Archive" }
             ],
             spotify: [
                 { title: "Irish Rovers", desc: "Playlist per imparare le strutture gramamticali con la musica irlandese", link: "https://open.spotify.com/playlist/2RcznFZFrHRHzUfmz6oGAU?si=d4c6642239b341de", tag: "Music", icon: "Music" },
@@ -155,7 +173,25 @@
                 { title: "Perfect English Grammar", desc: "Spiegazioni ed esercizi chiari", link: "https://www.perfect-english-grammar.com/", tag: "Top" },
                 { title: "EnglishGrammar.org", desc: "Risorse gratuite e PDF scaricabili", link: "https://www.englishgrammar.org/", tag: "Portal" },
                 { title: "Grammar Monster", desc: "Tutto su punteggiatura e regole", link: "https://www.grammar-monster.com/", tag: "Resource" },
-                { title: "Oxford Online Grammar", desc: "Lezioni di qualità da Oxford", link: "https://www.oxfordonlineenglish.com/english-grammar-lessons", tag: "Oxford" }
+                { title: "Road to Grammar", desc: "Quiz e giochi grammaticali veloci", link: "http://www.roadtogrammar.com/", tag: "Games" },
+                { title: "EnglishGrammarSecrets", desc: "Sintesi perfetta di ogni tempo verbale", link: "https://englishgrammarsecrets.com/", tag: "Short" },
+                { title: "Oxford Online Grammar", desc: "Lezioni di qualità da Oxford", link: "https://www.oxfordonlineenglish.com/english-grammar-lessons", tag: "Oxford" },
+                { title: "BBC Learning English Grammar", desc: "Grammatica per ogni livello", link: "https://www.bbc.co.uk/learningenglish/english/basic-grammar", tag: "BBC" },
+                { title: "Archivio Blog", desc: "I miei post didattici di grammatica", link: "http://englishcornerblog.altervista.org/category/grammar/", tag: "Archive" }
+            ],
+            writing: [
+                { title: "BBC Skillswise Writing", desc: "CV, lettere e report professionali", link: "https://www.bbc.co.uk/teach/skillswise/writing/z73pxsg", tag: "Skills" },
+                { title: "Cristina Cabal's Blog", desc: "Writing skills tips e risorse", link: "https://www.cristinacabal.com/", tag: "Blog" },
+                { title: "Formal Emails Guide", desc: "Come scrivere email formali", link: "http://englishcornerblog.altervista.org/category/writing/", tag: "Guide", icon: "Mail" },
+                { title: "Informal Emails Guide", desc: "Come scrivere ad amici", link: "http://englishcornerblog.altervista.org/category/writing/", tag: "Guide", icon: "Mail" },
+                { title: "Writing Skills (BC)", desc: "British Council exercises", link: "https://learnenglish.britishcouncil.org/skills/writing", tag: "BC" },
+                { title: "For and Against Essay", desc: "British Council Guide", link: "https://learnenglishteens.britishcouncil.org/skills/writing/upper-intermediate-b2-writing/against-essay", tag: "Essay" },
+                { title: "English for Emails", desc: "BC Business English", link: "https://learnenglish.britishcouncil.org/business-english/english-emails", tag: "Email" },
+                { title: "CV Guide (reed.co.uk)", desc: "How to write a professional CV", link: "https://www.reed.co.uk/career-advice/how-to-write-a-cv/", tag: "CV" },
+                { title: "CV 2 (Templates)", desc: "Modelli di CV", link: "http://englishcornerblog.altervista.org/category/writing/", tag: "CV" },
+                { title: "Cover Letters (Reed)", desc: "Professional advice from experts", link: "https://www.reed.co.uk/career-advice/cover-letters/", tag: "CV" },
+                { title: "Purdue OWL", desc: "Manuale di scrittura accademica", link: "https://owl.purdue.edu/", tag: "Ref" },
+                { title: "Write & Improve", desc: "Feedback istantaneo da Cambridge", link: "https://writeandimprove.com/", tag: "Tool" }
             ],
             technical: [
                 { title: "FAO - Food and Agriculture Org", desc: "Sito ufficiale ONU per l'agricoltura", link: "https://www.fao.org/home/en", tag: "Org", icon: "Globe" },
@@ -163,12 +199,41 @@
                 { title: "European Commission - Agriculture", desc: "Politiche agricole EU", link: "https://agriculture.ec.europa.eu/index_en", tag: "EU", icon: "Sprout" },
                 { title: "Agriculture.com", desc: "News dal mondo agrario e tecnologico", link: "https://www.agriculture.com/", tag: "News" },
                 { title: "Modern Farmer", desc: "Agricoltura contemporanea e sostenibilità", link: "https://modernfarmer.com/", tag: "Media" },
-                { title: "National Geographic Environment", desc: "Risorse su suolo, clima e biodiversità", link: "https://www.nationalgeographic.com/environment", tag: "Science" }
+                { title: "National Geographic Environment", desc: "Risorse su suolo, clima e biodiversità", link: "https://www.nationalgeographic.com/environment", tag: "Science" },
+                { title: "Sustainable Food Trust", desc: "Global sustainable food systems", link: "https://sustainablefoodtrust.org/", tag: "Eco", icon: "Sprout" },
+                { title: "Agricultural Science Vocabulary", desc: "Technical glossary for students", link: "https://www.myenglishpages.com/english/vocabulary-lesson-agriculture.php", tag: "Learning", icon: "Book" }
             ],
-            writing: [
-                { title: "BBC Skillswise Writing", desc: "CV, lettere e report professionali", link: "https://www.bbc.co.uk/teach/skillswise/writing/z73pxsg", tag: "Skills" },
-                { title: "Cristina Cabal's Blog", desc: "Writing skills tips e risorse", link: "https://www.cristinacabal.com/", tag: "Blog" },
-                { title: "Purdue OWL", desc: "Manuale di scrittura accademica", link: "https://owl.purdue.edu/", tag: "Ref" }
+            exams: [
+                { title: "Sito INVALSI", desc: "Portale ufficiale prove nazionali", link: "https://www.invalsi.it/", tag: "Official" },
+                { title: "Zanichelli Invalsi", desc: "Allenamento online per le superiori", link: "https://te.zanichelli.it/", tag: "Practice" },
+                { title: "Engheben", desc: "Archivio test e simulazioni", link: "https://www.engheben.it/", tag: "Test" },
+                { title: "Pearson Invalsi", desc: "Prove di allenamento Grado 10 e 13", link: "https://it.pearson.com/invalsi.html", tag: "Practice" },
+                { title: "ProveINVALSI.net", desc: "Archivio prove per le superiori", link: "https://www.proveinvalsi.net/prove-invalsi-scuola-superiore", tag: "Archive" },
+                { title: "DeA Scuola (Classe 2°)", desc: "Esercitazioni Grado 10", link: "https://invalsi.deascuola.it/", tag: "Practice" },
+                { title: "DeA Scuola (Classe 5°)", desc: "Esercitazioni Grado 13", link: "https://invalsi.deascuola.it/", tag: "Practice" },
+                { title: "HUB INVALSI (Mondadori)", desc: "Mondadori Campus Training", link: "https://www.hubscuola.it/", tag: "Hub" }
+            ],
+            literature: [
+                { title: "Sherlock Holmes Stories", desc: "Testi completi di Arthur Conan Doyle", link: "https://sherlock-holm.es/", tag: "Classic" },
+                { title: "Sherlock Holmes Audiobooks", desc: "Ascolta le storie di Sherlock", link: "https://librivox.org/author/467", tag: "Audio" },
+                { title: "100 Greatest Novels", desc: "La lista del BBC Arts Big Read", link: "https://www.bbc.co.uk/arts/bigread/top100.shtml", tag: "List" },
+                { title: "25 Greatest Novels Explained", desc: "Analisi di BBC Culture", link: "https://www.bbc.com/culture/article/20151204-the-25-greatest-british-novels", tag: "Article" },
+                { title: "No Fear Shakespeare", desc: "Traduzione in inglese moderno", link: "https://www.sparknotes.com/shakespeare/", tag: "Shakespeare" },
+                { title: "Shakespeare (BC/BBC)", desc: "Video ed esercizi", link: "https://learnenglish.britishcouncil.org/shakespeare", tag: "Shakespeare" },
+                { title: "Shakespeare for teens", desc: "British Council section", link: "https://learnenglishteens.britishcouncil.org/uk-now/literature-uk/shakespeare", tag: "Teens" },
+                { title: "Story of the Week", desc: "Classic American short stories", link: "https://storyoftheweek.loa.org/", tag: "Stories" },
+                { title: "Gradesaver", desc: "Study guides & Essays", link: "https://www.gradesaver.com/", tag: "Study" },
+                { title: "SparkNotes", desc: "Riassunti e analisi testi", link: "https://www.sparknotes.com/", tag: "Study" },
+                { title: "CliffNotes", desc: "Book summaries & test prep", link: "https://www.cliffsnotes.com/", tag: "Study" },
+                { title: "Project Gutenberg", desc: "3,700+ Titoli classici", link: "https://www.gutenberg.org/", tag: "Ebooks" },
+                { title: "Lit2Go", desc: "Mp3 Audiobooks + PDF", link: "https://etc.usf.edu/lit2go/", tag: "Audio" }
+            ],
+            vocabulary: [
+                { title: "Quizlet", desc: "Flashcards e giochi", link: "https://quizlet.com/", tag: "Tool" },
+                { title: "Idioms (ESL BUZZ)", desc: "Modi di dire illustrati", link: "https://www.eslbuzz.com/", tag: "Idioms" },
+                { title: "Cambridge Dictionary", desc: "Dizionario ufficiale", link: "https://dictionary.cambridge.org/", tag: "Ref" },
+                { title: "WordReference", desc: "Dizionario e Forum", link: "https://www.wordreference.com/", tag: "Ref" },
+                { title: "Archivio Vocabulary", desc: "Liste dal blog", link: "http://englishcornerblog.altervista.org/category/vocabulary/", tag: "Archive" }
             ]
         };
 
@@ -181,14 +246,16 @@
             { id: 'spotify', title: 'Spotify & Music', subtitle: 'My Playlists', icon: 'Music', color: 'text-green-800', border: 'border-green-600', bg: 'bg-green-100', desc: 'Playlist didattiche curate dal Prof. Crespi.' },
             { id: 'literature', title: 'Literature', subtitle: 'Authors', icon: 'Book', color: 'text-amber-800', border: 'border-amber-600', bg: 'bg-amber-100', desc: 'Shakespeare, Sherlock Holmes e Classici.' },
             { id: 'grammar', title: 'Grammar Hub', subtitle: 'Rules', icon: 'Brain', color: 'text-blue-800', border: 'border-blue-600', bg: 'bg-blue-100', desc: 'Le migliori risorse grammaticali online.' },
-            { id: 'technical', title: 'Technical English', subtitle: 'Agraria & Environment', icon: 'Sprout', color: 'text-lime-900', border: 'border-lime-700', bg: 'bg-lime-100', desc: 'Inglese Tecnico professionale per il settore agrario.' },
-            { id: 'travels', title: 'Travel Hub', subtitle: 'Tourism', icon: 'Plane', color: 'text-blue-900', border: 'border-blue-800', bg: 'bg-blue-100', desc: 'Siti istituzionali e guide turistiche mondiali.' }
+            { id: 'technical', title: 'Technical English', subtitle: 'Agraria & Env', icon: 'Sprout', color: 'text-lime-900', border: 'border-lime-700', bg: 'bg-lime-100', desc: 'Risorse avanzate per il settore agrario e ambientale.' },
+            { id: 'travels', title: 'Travel Hub', subtitle: 'Tourism', icon: 'Plane', color: 'text-blue-900', border: 'border-blue-800', bg: 'bg-blue-100', desc: 'Canada, NZ, Scozia e guide mondiali.' },
+            { id: 'exams', title: 'Exams & Invalsi', subtitle: 'Practice', icon: 'Award', color: 'text-cyan-800', border: 'border-cyan-600', bg: 'bg-cyan-100', desc: 'Invalsi e certificazioni Cambridge.' },
+            { id: 'vocabulary', title: 'Vocabulary', subtitle: 'Words', icon: 'Globe', color: 'text-pink-800', border: 'border-pink-600', bg: 'bg-pink-100', desc: 'Liste tematiche e dizionari.' }
         ];
 
         const AI_TOOLS = [
             { name: "NotebookLM", desc: "Analizza dispense tecniche e crea guide di studio AI.", link: "https://notebooklm.google.com/", cat: "Study" },
             { name: "TalkPal AI", desc: "Conversazione libera con un tutor IA madrelingua.", link: "https://talkpal.ai/", cat: "Speaking" },
-            { name: "DeepL Write", desc: "Perfeziona grammatica, stile e tono dei tuoi testi tecnici.", link: "https://www.deepl.com/write", cat: "Writing" },
+            { name: "DeepL Write", desc: "Perfeziona grammatica, stile e tono dei tuoi testi.", link: "https://www.deepl.com/write", cat: "Writing" },
             { name: "ELSA Speak", desc: "Coach IA per la pronuncia e l'intonazione.", link: "https://elsaspeak.com/", cat: "Speaking" },
             { name: "Perplexity", desc: "Motore di ricerca con fonti e citazioni verificate.", link: "https://www.perplexity.ai/", cat: "Research" },
             { name: "ChatPDF", desc: "Interroga qualsiasi documento PDF in lingua inglese.", link: "https://www.chatpdf.com/", cat: "Study" },
@@ -205,7 +272,7 @@
         const App = () => {
             const [view, setView] = useState('home');
             const [selectedCategory, setSelectedCategory] = useState(null);
-            const [messages, setMessages] = useState([{role: 'ai', text: 'Hello! I am your AI assistant. How can I help you today?'}]);
+            const [messages, setMessages] = useState([{role: 'ai', text: 'Hello! I am your AI assistant. Ready to practice English?'}]);
             const [input, setInput] = useState('');
             const [copied, setCopied] = useState(null);
 
@@ -219,7 +286,7 @@
                 setMessages(newMsgs);
                 setInput('');
                 setTimeout(() => {
-                    setMessages([...newMsgs, {role: 'ai', text: 'Hi! This is the English Corner AI Lab. Tutoring is active! Link your Gemini API key for real-time responses.'}]);
+                    setMessages([...newMsgs, {role: 'ai', text: 'Hi! This is the AI Academy Lab. How else can I assist your English studies?'}]);
                 }, 1000);
             }
 
@@ -231,7 +298,6 @@
 
             return (
                 <div className="flex flex-col min-h-screen">
-                    {/* Header Professionale */}
                     <header className="bg-white sticky top-0 z-50 shadow-md border-b-2 border-slate-200">
                         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                             <div className="flex items-center gap-3 cursor-pointer" onClick={goHome}>
@@ -377,7 +443,7 @@
                     
                     <footer className="bg-slate-900 text-slate-400 py-16 text-center mt-20">
                         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 font-black text-center">
-                            <span className="text-2xl text-white italic tracking-tighter uppercase">English Corner</span>
+                            <span className="text-2xl text-white italic tracking-tighter uppercase text-nowrap">English Corner</span>
                             <p className="text-sm uppercase tracking-[0.3em]">© 2026</p>
                         </div>
                     </footer>
