@@ -83,7 +83,8 @@
             ExternalLink: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>,
             Brain: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>,
             Sparkles: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>,
-            Newspaper: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+            Newspaper: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>,
+            Sprout: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.2.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1.7-1.3 2.9-3.8 3-6.9-2.8.9-5.1 2-6.2 4.3z"/></svg>
         };
 
         function Icon({ name, className = "", size = 24 }) {
@@ -226,10 +227,14 @@
                 { title: "Write & Improve", desc: "Feedback da Cambridge", link: "https://writeandimprove.com/", tag: "Tool" }
             ],
             technical: [
-                { title: "FAO", desc: "Food and Agriculture Organization (UN)", link: "https://www.fao.org/home/en", tag: "Org" },
-                { title: "Agriculture.com", desc: "News dal mondo agrario", link: "https://www.agriculture.com/", tag: "News" },
-                { title: "European Commission - Agriculture", desc: "Policy, news and rural development", link: "https://agriculture.ec.europa.eu/index_en", tag: "EU" },
-                { title: "Le Mie Dispense", desc: "Archivio Tecnico del blog", link: "http://englishcornerblog.altervista.org/category/technical-english/", tag: "Archive" }
+                { title: "FAO", desc: "Food and Agriculture Organization (UN)", link: "https://www.fao.org/home/en", tag: "Org", icon: "Globe" },
+                { title: "USDA", desc: "United States Department of Agriculture", link: "https://www.usda.gov/", tag: "Official", icon: "Globe" },
+                { title: "European Commission - Agriculture", desc: "Politiche agricole e sviluppo rurale EU", link: "https://agriculture.ec.europa.eu/index_en", tag: "EU", icon: "Sprout" },
+                { title: "Agriculture.com", desc: "News dal mondo agrario e tecnologico", link: "https://www.agriculture.com/", tag: "News", icon: "Newspaper" },
+                { title: "Modern Farmer", desc: "Agricoltura contemporanea e sostenibilità", link: "https://modernfarmer.com/", tag: "Media", icon: "Sprout" },
+                { title: "National Geographic Environment", desc: "Risorse su suolo, clima e biodiversità", link: "https://www.nationalgeographic.com/environment", tag: "Science", icon: "Globe" },
+                { title: "Sustainable Food Trust", desc: "Sistemi alimentari sostenibili nel mondo", link: "https://sustainablefoodtrust.org/", tag: "Eco", icon: "Sprout" },
+                { title: "Agricultural Science Vocabulary", desc: "Glossario tecnico per studenti", link: "https://www.myenglishpages.com/english/vocabulary-lesson-agriculture.php", tag: "Learning", icon: "Book" }
             ],
             vocabulary: [
                 { title: "Quizlet", desc: "Flashcards e giochi", link: "https://quizlet.com/", tag: "Tool" },
@@ -249,7 +254,7 @@
             { id: 'spotify', title: 'Spotify & Music', subtitle: 'My Playlists', icon: 'Music', color: 'text-green-800', border: 'border-green-600', bg: 'bg-green-100', desc: 'Playlist didattiche curate dal Prof. Crespi.' },
             { id: 'literature', title: 'Literature', subtitle: 'Authors', icon: 'Book', color: 'text-amber-800', border: 'border-amber-600', bg: 'bg-amber-100', desc: 'Shakespeare, Sherlock Holmes e Classici.' },
             { id: 'grammar', title: 'Grammar Hub', subtitle: 'Rules', icon: 'Brain', color: 'text-blue-800', border: 'border-blue-600', bg: 'bg-blue-100', desc: 'Le migliori risorse grammaticali online.' },
-            { id: 'technical', title: 'Technical English', subtitle: 'Technical ESP', icon: 'Plane', color: 'text-lime-900', border: 'border-lime-700', bg: 'bg-lime-100', desc: 'Inglese Tecnico per scopi specifici.' },
+            { id: 'technical', title: 'Technical English', subtitle: 'ESP Resources', icon: 'Sprout', color: 'text-lime-900', border: 'border-lime-700', bg: 'bg-lime-100', desc: 'Risorse avanzate per l\'indirizzo Agrario e Ambientale.' },
             { id: 'travels', title: 'Travel Hub', subtitle: 'Global Tourism', icon: 'Plane', color: 'text-blue-900', border: 'border-blue-800', bg: 'bg-blue-100', desc: 'Canada, NZ e guide turistiche mondiali.' },
             { id: 'exams', title: 'Exams & Invalsi', subtitle: 'Practice', icon: 'Award', color: 'text-cyan-800', border: 'border-cyan-600', bg: 'bg-cyan-100', desc: 'Invalsi Superiori e certificazioni Cambridge.' },
             { id: 'vocabulary', title: 'Vocabulary', subtitle: 'Idioms & Words', icon: 'Globe', color: 'text-pink-800', border: 'border-pink-600', bg: 'bg-pink-100', desc: 'Liste tematiche e modi di dire.' }
