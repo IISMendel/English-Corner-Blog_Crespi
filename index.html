@@ -46,6 +46,13 @@
             transform: translateX(-4px);
         }
 
+        /* Hero Background */
+        .hero-section {
+            background-color: #0f172a;
+            background-image: radial-gradient(circle at 2px 2px, #1e293b 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
         /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 10px; }
         ::-webkit-scrollbar-track { background: #f1f5f9; }
@@ -79,7 +86,8 @@
             Copy: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>,
             Check: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>,
             Target: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>,
-            Sprout: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.2.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1.7-1.3 2.9-3.8 3-6.9-2.8.9-5.1 2-6.2 4.3z"/></svg>
+            Sprout: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.2.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1.7-1.3 2.9-3.8 3-6.9-2.8.9-5.1 2-6.2 4.3z"/></svg>,
+            Send: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         };
 
         function Icon({ name, className = "", size = 24 }) {
@@ -135,38 +143,24 @@
                 { title: "Tourism Ireland", desc: "Sito ufficiale del turismo irlandese", link: "https://www.ireland.com/", tag: "Official", icon: "Plane" },
                 { title: "Visit London", desc: "La guida ufficiale per scoprire Londra", link: "https://www.visitlondon.com/", tag: "City", icon: "Plane" },
                 { title: "Visit The USA", desc: "Turismo ufficiale negli Stati Uniti", link: "https://www.visittheusa.com/", tag: "Official", icon: "Plane" },
-                { title: "Tourism Australia", desc: "Sito ufficiale turismo australiano", link: "https://www.australia.com/", tag: "Official", icon: "Plane" },
-                { title: "Archivio Viaggi", desc: "I post e i viaggi didattici del blog", link: "http://englishcornerblog.altervista.org/category/travels/", tag: "Archive" }
+                { title: "Tourism Australia", desc: "Sito ufficiale turismo australiano", link: "https://www.australia.com/", tag: "Official", icon: "Plane" }
             ],
             spotify: [
-                { title: "Grammar & Lyrics Lab", desc: "Playlist per imparare le strutture verbali", link: "https://open.spotify.com/playlist/2RcznFZFrHRHzUfmz6oGAU?si=d4c6642239b341de", tag: "Music", icon: "Music" },
-                { title: "English Corner Mix", desc: "Selezione musicale curata dal Prof. Crespi", link: "https://open.spotify.com/playlist/7xZ9I5GhOGwFLTJZttTN5p?si=3d452bd4bd1748d9", tag: "Music", icon: "Music" },
-                { title: "Listening Mastery", desc: "Canzoni per allenare l'orecchio", link: "https://open.spotify.com/playlist/1YLQCTguHzqY3YPXbN2h1H?si=33d9def77bff4485", tag: "Music", icon: "Music" },
+                { title: "Irish Rovers", desc: "Playlist per imparare le strutture gramamticali con la musica irlandese", link: "https://open.spotify.com/playlist/2RcznFZFrHRHzUfmz6oGAU?si=d4c6642239b341de", tag: "Music", icon: "Music" },
+                { title: "English Corner Playlist 1", desc: "Selezione musicale curata dal Prof. Crespi", link: "https://open.spotify.com/playlist/7xZ9I5GhOGwFLTJZttTN5p?si=3d452bd4bd1748d9", tag: "Music", icon: "Music" },
+                { title: "Life's a journey not a destination", desc: "Canzoni per allenare l'orecchio in viaggio", link: "https://open.spotify.com/playlist/1YLQCTguHzqY3YPXbN2h1H?si=33d9def77bff4485", tag: "Music", icon: "Music" },
                 { title: "British & American Vibes", desc: "Il meglio della musica anglofona", link: "https://open.spotify.com/playlist/0KAxDrl0ciq6QjS8IRwYYV?si=b6cd8c373fae407d", tag: "Music", icon: "Music" },
-                { title: "Vocabulary Booster", desc: "Impara parole nuove a ritmo di musica", link: "https://open.spotify.com/playlist/4wjxK60ltiZiB57jBkncZE?si=97ace4a748d44073", tag: "Music", icon: "Music" },
-                { title: "Pop English Classroom", desc: "Grandi successi per la classe", link: "https://open.spotify.com/playlist/7o9gqlJ5BM5XFC26D503Wx?si=e7924b098e5943b9", tag: "Music", icon: "Music" }
+                { title: "Party time per diplomati e relativi prof. anziani", desc: "Imparate? No, divertitevi e basta, adesso che siete diplomati e diplomate", link: "https://open.spotify.com/playlist/4wjxK60ltiZiB57jBkncZE?si=97ace4a748d44073", tag: "Music", icon: "Music" },
+                { title: "English Classroom", desc: "Grandi successi per la classe", link: "https://open.spotify.com/playlist/7o9gqlJ5BM5XFC26D503Wx?si=e7924b098e5943b9", tag: "Music", icon: "Music" }
             ],
             grammar: [
                 { title: "Perfect English Grammar", desc: "Spiegazioni ed esercizi chiari", link: "https://www.perfect-english-grammar.com/", tag: "Top" },
                 { title: "EnglishGrammar.org", desc: "Risorse gratuite e PDF scaricabili", link: "https://www.englishgrammar.org/", tag: "Portal" },
                 { title: "Grammar Monster", desc: "Tutto su punteggiatura e regole", link: "https://www.grammar-monster.com/", tag: "Resource" },
-                { title: "BBC Learning English Grammar", desc: "Grammatica per ogni livello", link: "https://www.bbc.co.uk/learningenglish/english/basic-grammar", tag: "BBC" }
-            ],
-            technical: [
-                { title: "FAO", desc: "Food and Agriculture Organization (UN)", link: "https://www.fao.org/home/en", tag: "Org", icon: "Globe" },
-                { title: "USDA", desc: "United States Department of Agriculture", link: "https://www.usda.gov/", tag: "Official" },
-                { title: "European Commission - Agriculture", desc: "Politiche agricole EU", link: "https://agriculture.ec.europa.eu/index_en", tag: "EU" },
-                { title: "Agriculture.com", desc: "News dal mondo agrario e tecnologico", link: "https://www.agriculture.com/", tag: "News" },
-                { title: "National Geographic Environment", desc: "Risorse su suolo, clima e biodiversità", link: "https://www.nationalgeographic.com/environment", tag: "Science" }
-            ],
-            exams: [
-                { title: "Sito INVALSI", desc: "Portale ufficiale prove nazionali", link: "https://www.invalsi.it/", tag: "Official" },
-                { title: "Zanichelli Invalsi", desc: "Allenamento online per le superiori", link: "https://te.zanichelli.it/", tag: "Practice" },
-                { title: "Pearson Invalsi", desc: "Prove di allenamento Grado 10 e 13", link: "https://it.pearson.com/invalsi.html", tag: "Practice" },
-                { title: "ProveINVALSI.net", desc: "Archivio prove per le superiori", link: "https://www.proveinvalsi.net/prove-invalsi-scuola-superiore", tag: "Archive" }
+                { title: "Oxford Online Grammar", desc: "Lezioni di qualità da Oxford", link: "https://www.oxfordonlineenglish.com/english-grammar-lessons", tag: "Oxford" }
             ],
             writing: [
-                { title: "BBC Skillswise Writing", desc: "CV, lettere e report professionali", link: "https://www.bbc.co.uk/teach/skillswise/writing/z73pxsg", tag: "Skills" },
+                { title: "BBC Skillswise", desc: "CV, lettere e report professionali", link: "https://www.bbc.co.uk/teach/skillswise/writing/z73pxsg", tag: "Skills" },
                 { title: "Cristina Cabal's Blog", desc: "Writing skills tips e risorse", link: "https://www.cristinacabal.com/", tag: "Blog" },
                 { title: "Purdue OWL", desc: "Manuale di scrittura accademica", link: "https://owl.purdue.edu/", tag: "Ref" }
             ],
@@ -174,10 +168,6 @@
                 { title: "Sherlock Holmes Stories", desc: "Testi completi di Arthur Conan Doyle", link: "https://sherlock-holm.es/", tag: "Classic" },
                 { title: "100 Greatest Novels", desc: "La lista del BBC Arts Big Read", link: "https://www.bbc.co.uk/arts/bigread/top100.shtml", tag: "List" },
                 { title: "No Fear Shakespeare", desc: "Traduzione in inglese moderno", link: "https://www.sparknotes.com/shakespeare/", tag: "Shakespeare" }
-            ],
-            vocabulary: [
-                { title: "Quizlet", desc: "Flashcards e giochi", link: "https://quizlet.com/", tag: "Tool" },
-                { title: "WordReference", desc: "Dizionario e Forum", link: "https://www.wordreference.com/", tag: "Ref" }
             ]
         };
 
@@ -189,11 +179,7 @@
             { id: 'listening', title: 'Listening Hub', subtitle: 'Video & Audio', icon: 'Headphones', color: 'text-purple-800', border: 'border-purple-600', bg: 'bg-purple-100', desc: 'Radio dal mondo, TED e podcast BBC.' },
             { id: 'spotify', title: 'Spotify & Music', subtitle: 'My Playlists', icon: 'Music', color: 'text-green-800', border: 'border-green-600', bg: 'bg-green-100', desc: 'Playlist didattiche curate dal Prof. Crespi.' },
             { id: 'literature', title: 'Literature', subtitle: 'Authors', icon: 'Book', color: 'text-amber-800', border: 'border-amber-600', bg: 'bg-amber-100', desc: 'Shakespeare, Sherlock Holmes e Classici.' },
-            { id: 'grammar', title: 'Grammar Hub', subtitle: 'Rules', icon: 'Brain', color: 'text-blue-800', border: 'border-blue-600', bg: 'bg-blue-100', desc: 'Le migliori risorse grammaticali online.' },
-            { id: 'technical', title: 'Technical English', subtitle: 'Technical ESP', icon: 'Sprout', color: 'text-lime-900', border: 'border-lime-700', bg: 'bg-lime-100', desc: 'Risorse per l\'indirizzo Agrario e Ambientale.' },
-            { id: 'travels', title: 'Travel Hub', subtitle: 'Global Tourism', icon: 'Plane', color: 'text-blue-900', border: 'border-blue-800', bg: 'bg-blue-100', desc: 'Canada, Nuova Zelanda e guide mondiali.' },
-            { id: 'exams', title: 'Exams & Invalsi', subtitle: 'Practice', icon: 'Award', color: 'text-cyan-800', border: 'border-cyan-600', bg: 'bg-cyan-100', desc: 'Invalsi Superiori e certificazioni Cambridge.' },
-            { id: 'vocabulary', title: 'Vocabulary', subtitle: 'Idioms & Words', icon: 'Globe', color: 'text-pink-800', border: 'border-pink-600', bg: 'bg-pink-100', desc: 'Liste tematiche e modi di dire.' }
+            { id: 'grammar', title: 'Grammar Hub', subtitle: 'Rules', icon: 'Brain', color: 'text-blue-800', border: 'border-blue-600', bg: 'bg-blue-100', desc: 'Le migliori risorse grammaticali online.' }
         ];
 
         const AI_TOOLS = [
@@ -203,29 +189,19 @@
             { name: "ELSA Speak", desc: "Feedback immediato sulla pronuncia e l'intonazione.", link: "https://elsaspeak.com/", cat: "Speaking" },
             { name: "Perplexity", desc: "Motore di ricerca con fonti verificate e citazioni.", link: "https://www.perplexity.ai/", cat: "Research" },
             { name: "ChatPDF", desc: "Interroga qualsiasi documento PDF tecnico in inglese.", link: "https://www.chatpdf.com/", cat: "Study" },
-            { name: "Rewordify", desc: "Semplifica testi inglesi complessi o tecnici.", link: "https://rewordify.com/", cat: "Reading" },
-            { name: "Language Reactor", desc: "Sottotitoli doppi e traduzione per Netflix e YouTube.", link: "https://www.languagereactor.com/", cat: "Video" },
-            { name: "Twee", desc: "Genera quiz e domande da qualsiasi video YouTube.", link: "https://twee.com/", cat: "Exercises" },
-            { name: "Character.ai", desc: "Parla con personaggi storici o giganti della letteratura.", link: "https://character.ai/", cat: "Literature" }
+            { name: "Language Reactor", desc: "Sottotitoli doppi e traduzione per Netflix e YouTube.", link: "https://www.languagereactor.com/", cat: "Video" }
         ];
 
         const PROMPTS = [
-            { title: "Simulazione FCE Speaking", text: "Act as a Cambridge FCE Examiner. Conduct a Part 1 Speaking test with me. Ask one question at a time and give feedback." },
-            { title: "Analisi Testo Tecnico", text: "Explain the main concepts of this technical text using B1 vocabulary. Create a glossary of the 5 most important terms." },
-            { title: "Correttore Formale", text: "Rewrite this email to make it professionally appropriate for a job application. Focus on formal connectors." }
-        ];
-
-        const AI_SKILLS = [
-            { id: 'Conversation', icon: 'Headphones', label: 'Speaking Partner' },
-            { id: 'Technical', icon: 'Sprout', label: 'Technical Tutor' },
-            { id: 'Exams', icon: 'Target', label: 'Exam Prep' }
+            { title: "Simulazione Speaking", text: "Act as a native English speaker. Conduct a natural conversation about agricultural technologies." },
+            { title: "Analisi Testo", text: "Explain the main concepts of this technical text using CEFR B1 vocabulary." },
+            { title: "Correttore Email", text: "Rewrite this formal email to make it more professional for a job application." }
         ];
 
         const App = () => {
             const [view, setView] = useState('home');
             const [selectedCategory, setSelectedCategory] = useState(null);
-            const [selectedSkill, setSelectedSkill] = useState('Conversation');
-            const [messages, setMessages] = useState([{role: 'ai', text: 'Hello! I am your AI English Assistant. How can I help you today?'}]);
+            const [messages, setMessages] = useState([{role: 'ai', text: 'Hello! I am your AI assistant. Ready to practice English?'}]);
             const [input, setInput] = useState('');
             const [copied, setCopied] = useState(null);
 
@@ -239,9 +215,9 @@
                 setMessages(newMsgs);
                 setInput('');
                 setTimeout(() => {
-                    setMessages([...newMsgs, {role: 'ai', text: `Hi! This is the English Corner AI Lab. You are currently practicing as a ${selectedSkill} assistant. Please connect an API key for live responses.`}]);
+                    setMessages([...newMsgs, {role: 'ai', text: 'Hi! This is the English Corner AI Lab. Link your Gemini API key to activate real responses.'}]);
                 }, 1000);
-            };
+            }
 
             const handleCopy = (text, title) => {
                 navigator.clipboard.writeText(text);
@@ -256,7 +232,7 @@
                             <div className="flex items-center gap-3 cursor-pointer" onClick={goHome}>
                                 <div className="bg-slate-900 text-white p-2 rounded-lg"><Icon name="Globe" size={28} /></div>
                                 <div>
-                                    <h1 className="text-2xl font-black text-slate-900 leading-none tracking-tight uppercase italic text-nowrap">English Corner</h1>
+                                    <h1 className="text-2xl font-black text-slate-900 leading-none tracking-tight uppercase italic">English Corner</h1>
                                     <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Prof. Crespi Lab</p>
                                 </div>
                             </div>
@@ -275,7 +251,7 @@
                                 <div className="text-center max-w-4xl mx-auto mt-8">
                                     <h1 className="text-6xl font-black text-slate-900 mb-8 leading-tight tracking-tighter italic uppercase">Il tuo Corner per l'Inglese.</h1>
                                     <p className="text-xl text-slate-800 leading-relaxed font-bold border-y-2 border-slate-900 py-6">
-                                        Questo è un blog pensato per gli studenti… e non solo; un supporto per trovare materiale, siti di approfondimento in cui potete trovare risorse per reading, listening, writing, articoli, news, viaggi ecc.
+                                        Questo è un blog pensato per gli studenti… e non solo; un supporto per trovare materiale, siti di approfondimento in cui potete trovare risorse che possono aiutarvi, ad esempio, con reading, listening, writing, articoli, news, viaggi ecc.
                                     </p>
                                 </div>
                                 <div className="bg-white border-l-8 border-slate-900 p-10 shadow-xl max-w-3xl mx-auto flex gap-6 items-start rounded-r-2xl">
@@ -334,29 +310,24 @@
 
                                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                                     <div className="lg:col-span-2 space-y-12">
-                                        <section className="bg-white rounded-3xl shadow-xl border-4 border-slate-900 overflow-hidden flex flex-col h-[700px]">
-                                            <div className="bg-slate-900 p-6 flex justify-between items-center">
-                                                <div className="flex items-center gap-3"><div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div><span className="font-black text-white uppercase tracking-widest">AI Tutor Lab</span></div>
-                                                <div className="flex gap-2">
-                                                    {AI_SKILLS.map(s => (
-                                                        <button key={s.id} onClick={() => setSelectedSkill(s.id)} className={`px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${selectedSkill === s.id ? 'bg-white text-slate-900' : 'bg-slate-800 text-slate-500 hover:text-white'}`}>{s.label}</button>
-                                                    ))}
-                                                </div>
+                                        <section className="bg-white rounded-3xl shadow-xl border-4 border-slate-900 overflow-hidden flex flex-col h-[600px]">
+                                            <div className="bg-slate-900 p-6 font-black text-white flex items-center gap-3">
+                                                AI TUTOR LAB
                                             </div>
-                                            <div className="flex-1 p-8 overflow-y-auto bg-slate-50 space-y-6">
+                                            <div className="flex-1 p-8 overflow-y-auto bg-slate-50 space-y-6 font-bold">
                                                 {messages.map((m, i) => (
                                                     <div key={i} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-                                                        <div className={`max-w-[85%] p-6 rounded-2xl text-lg shadow-md font-bold ${m.role === 'user' ? 'bg-slate-900 text-white rounded-tr-none' : 'bg-white border-2 border-slate-200 text-slate-900 rounded-tl-none'}`}>{m.text}</div>
+                                                        <div className={`max-w-[85%] p-6 rounded-2xl text-lg shadow-md ${m.role === 'user' ? 'bg-slate-900 text-white rounded-tr-none' : 'bg-white border-2 border-slate-200 text-slate-900 rounded-tl-none'}`}>{m.text}</div>
                                                     </div>
                                                 ))}
                                             </div>
                                             <form onSubmit={sendChat} className="p-8 bg-white border-t-4 border-slate-900 flex gap-4">
-                                                <input value={input} onChange={e => setInput(e.target.value)} placeholder={`Chat as ${selectedSkill}...`} className="flex-1 px-6 py-4 border-2 border-slate-200 rounded-2xl outline-none focus:border-slate-900 font-bold text-lg"/>
+                                                <input value={input} onChange={e => setInput(e.target.value)} placeholder={`Chat as AI assistant...`} className="flex-1 px-6 py-4 border-2 border-slate-200 rounded-2xl outline-none focus:border-slate-900 font-bold text-lg"/>
                                                 <button className="bg-slate-900 text-white p-4 rounded-2xl shadow-lg hover:bg-slate-800 font-black uppercase">Send</button>
                                             </form>
                                         </section>
 
-                                        <section className="space-y-8">
+                                        <section className="space-y-8 pb-20">
                                             <h3 className="text-4xl font-black uppercase italic tracking-tighter border-b-4 border-slate-900 pb-2">AI Directory</h3>
                                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                                 {AI_TOOLS.map(t => (
@@ -391,10 +362,6 @@
                                                         <p className="text-sm font-bold italic text-slate-600">"{p.text}"</p>
                                                     </div>
                                                 ))}
-                                            </div>
-                                            <div className="mt-8 p-6 bg-slate-900 rounded-2xl text-white">
-                                                <div className="flex items-center gap-2 mb-4"><Icon name="Sparkles" className="text-yellow-400" size={18} /><span className="font-black text-xs uppercase">Pro Tip</span></div>
-                                                <p className="text-sm font-bold opacity-80 leading-relaxed">Copia questi prompt in NotebookLM o Perplexity per analizzare le tue dispense in modo rapido e preciso.</p>
                                             </div>
                                         </div>
                                     </div>
